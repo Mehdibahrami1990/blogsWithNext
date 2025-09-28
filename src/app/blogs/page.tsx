@@ -1,19 +1,18 @@
 import React from "react";
 import Container from "@/components/Container";
-const Blogs = () => {
+import Article from "@/components/Article";
+import { PropsBlogs } from "@/types/Types";
+
+const Blogs = async () => {
+  const result = await fetch("http://localhost:3001/articles");
+  const data = (await result.json()) as PropsBlogs[];
+  console.log(data);
   return (
     <Container>
-      <div className="grid grid-cols-4 gap-4">
-        <div className="shadow p-4 ">
-          <h2>title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            sed minus laborum suscipit nam dolorum enim doloremque accusantium
-            dignissimos necessitatibus iste saepe ad consequuntur fugiat
-            numquam, cumque quam. Voluptate nam nostrum incidunt ut, facilis
-            laudantium!
-          </p>
-        </div>
+      <div className="grid grid-cols-4 gap-4 py-16">
+        {data.map((item) => (
+          <Article {...item} key={item.id} />
+        ))}
       </div>
     </Container>
   );

@@ -39,10 +39,23 @@
 
 @layer theme {
   :root, :host {
+    --color-amber-600: #dd7400;
     --color-black: #000;
     --spacing: .25rem;
     --default-font-family: var(--font-geist-sans);
     --default-mono-font-family: var(--font-geist-mono);
+  }
+
+  @supports (color: color(display-p3 0 0 0)) {
+    :root, :host {
+      --color-amber-600: color(display-p3 .827144 .467166 .0336006);
+    }
+  }
+
+  @supports (color: lab(0% 0 0)) {
+    :root, :host {
+      --color-amber-600: lab(60.3514% 40.5624 87.1228);
+    }
   }
 }
 
@@ -428,6 +441,10 @@
     }
   }
 
+  .m-1 {
+    margin: calc(var(--spacing) * 1);
+  }
+
   .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -435,6 +452,14 @@
 
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
+  }
+
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
 
   .grid {
@@ -453,12 +478,24 @@
     gap: calc(var(--spacing) * 4);
   }
 
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
+  }
+
   .bg-black {
     background-color: var(--color-black);
   }
 
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
 
   .shadow {
