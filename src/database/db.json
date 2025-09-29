@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Get started Tailwind CSS",
+      "description": "Next.js includes a custom TypeScript plugin and type checker, which VSCode and other code editors can use for advanced type-checking and auto-completion."
+    },
+    {
+      "id": "2",
+      "title": "Editor setup",
+      "description": "Next.js includes a custom TypeScript plugin and type checker, which VSCode and other code editors can use for advanced type-checking and auto-completion."
+    }
+  ]
+}
