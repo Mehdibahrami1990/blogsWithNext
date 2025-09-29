@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///media/mehdi/b2065d47-d565-4af4-a236-1ab2b2ea64e3/MyProjects/next_14/blogs/src/components/BackButton.tsx"],"sourcesContent":["\"use client\";\n\nimport { useRouter } from \"next/navigation\";\n\nconst BackButton = () => {\n  const router = useRouter();\n  return (\n    <button\n      onClick={() => router.back()}\n      className=\"bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 shadow\"\n    >\n      Go Back\n    </button>\n  );\n};\n\nexport default BackButton;\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIA,MAAM,aAAa;IACjB,MAAM,SAAS,IAAA,+IAAS;IACxB,qBACE,8OAAC;QACC,SAAS,IAAM,OAAO,IAAI;QAC1B,WAAU;kBACX;;;;;;AAIL;uCAEe","debugId":null}},
-    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":["file:///media/mehdi/b2065d47-d565-4af4-a236-1ab2b2ea64e3/MyProjects/next_14/blogs/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-ssr']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0],"debugId":null}},
-    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["file:///media/mehdi/b2065d47-d565-4af4-a236-1ab2b2ea64e3/MyProjects/next_14/blogs/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}}]
-}
