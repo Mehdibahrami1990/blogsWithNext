@@ -1,6 +1,7 @@
 {
   "/blogs/[id]/page": "app/blogs/[id]/page.js",
   "/blogs/page": "app/blogs/page.js",
+  "/create-blog/page": "app/create-blog/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
 }
