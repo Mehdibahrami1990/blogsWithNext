@@ -11,9 +11,8 @@ const Blogs = async () => {
     <Container>
       <div className="grid grid-cols-4 gap-4 py-16">
         {data.map((item) => (
-          // eslint-disable-next-line react/jsx-key
-          <Link href={`/blogs/${item.id}`}>
-            <Article {...item} key={item.id} />
+          <Link key={item.id} href={`/blogs/${item.id}`}>
+            <Article {...item} />
           </Link>
         ))}
       </div>
