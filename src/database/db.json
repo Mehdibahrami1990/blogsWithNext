@@ -9,11 +9,6 @@
       "id": "2",
       "title": "Editor setup",
       "description": "Next.js includes a custom TypeScript plugin and type checker, which VSCode and other code editors can use for advanced type-checking and auto-completion."
-    },
-    {
-      "id": "40",
-      "title": "Default input",
-      "description": "Get started with this example if you want to apply the disabled state to an input field."
     }
   ]
 }

@@ -7,7 +7,6 @@ import Link from "next/link";
 const Blogs = async () => {
   const result = await fetch("http://localhost:3001/articles");
   const data = (await result.json()) as PropsBlogs[];
-  console.log(data);
   return (
     <Container>
       <div className="grid grid-cols-4 gap-4 py-16">
